@@ -1,5 +1,5 @@
 public class MatricesA {
-    public static void main(string[] args){
+    public static void main(String[] args){
 
         //Declaracion de la matriz forma 1
         int[][] a ={{5, 8, 6}, 
@@ -13,4 +13,5 @@ public class MatricesA {
             }
         }            
     }
+}
     
