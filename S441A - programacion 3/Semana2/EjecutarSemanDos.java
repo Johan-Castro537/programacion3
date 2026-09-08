@@ -1,7 +1,7 @@
 public class EjecutarSemanDos {
     
     public static void main(String[] args) {
-        
+         
 //Declaracion del arreglo forma 1
     int[] a = {3, 10, 5, 9, 11, 22, 1, 14, 25, 7, 8, 19};
     
@@ -12,7 +12,7 @@ public class EjecutarSemanDos {
 
     }
     //Declaracion del arreglo forma 2
-    
+
     int[] b = new int [12];
 
     int max = 100;
