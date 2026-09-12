@@ -5,7 +5,7 @@ public class Punto7{
         int[] a = {3,10,32,1,22,7,0,5,8};
 
         for(int i = 0; i < a.length; i++){
-                static.out.println("a[" + i + "] = " + a[i]);
+                System.out.println("a[" + i + "] = " + a[i]);
         }
 
         int [] pares = new int[10];
@@ -17,16 +17,18 @@ public class Punto7{
         for (int i = 0; i < a.length; i++){
             if (a[i] % 2 == 0){
                 pares[p] = a[i];
-                p++
+                p++;
             } else {
                 impares[im] = a[i];
-                im++
+                im++;
             }
         }
-        for (int i = 0;) i < p; i++{
+
+        for (int i = 0; i < p; i++){
             System.out.println("pares[" + i +"] = " + pares[i]);
         }
-       for (int i = 0;) i < im; i++{
+        
+       for (int i = 0; i < im; i++){
         System.out.println("impares[" + i +"] = " + impares[i]);
         }    
     }
