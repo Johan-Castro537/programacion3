@@ -17,7 +17,7 @@ public class Punto8{
         
         for (int i = 0; i < a.length; i++){
             if (a[i] > ma){
-                ma = a[i]
+                ma = a[i];
             }
             if (a[i] < me){
                 me = a[i];
@@ -35,6 +35,7 @@ public class Punto8{
                 cantidadmenor++;
             }
         }
+        System.out.println("El mayor es: " + ma + " y aparece " + cantidadmayor + " veces");
+        System.out.println("El menor es: " + me + " y aparece " + cantidadmenor + " veces");
     }
-
-     
+}
