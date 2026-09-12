@@ -23,5 +23,11 @@ public class Punto7{
                 im++
             }
         }
+        for (int i = 0;) i < p; i++{
+            System.out.println("pares[" + i +"] = " + pares[i]);
+        }
+       for (int i = 0;) i < im; i++{
+        System.out.println("impares[" + i +"] = " + impares[i]);
+        }    
     }
 }
