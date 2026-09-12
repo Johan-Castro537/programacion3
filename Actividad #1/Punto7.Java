@@ -6,9 +6,15 @@ public class Punto7{
 
         for(int i = 0; i < a.length; i++){
                 static.out.println("a[" + i + "] = " + a[i]);
-               
         }
+
+        int [] pares = new int[10];
+        int [] impares = new int[10]
+
+        int p = 0;
+        int im = 0;
+
         
+
     }
-    
 }
