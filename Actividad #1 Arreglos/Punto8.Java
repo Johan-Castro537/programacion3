@@ -24,6 +24,17 @@ public class Punto8{
             }
         }
         
+        int cantidadmayor = 0;
+        int cantidadmenor = 0;
+        for (int i = 0; i < a.length; i++){
+
+            if (a[i] == ma){
+                cantidadmayor++;
+            }
+            if (a[i] == me){
+                cantidadmenor++;
+            }
+        }
     }
 
      
