@@ -9,12 +9,19 @@ public class Punto7{
         }
 
         int [] pares = new int[10];
-        int [] impares = new int[10]
+        int [] impares = new int[10];
 
         int p = 0;
         int im = 0;
 
-        
-
+        for (int i = 0; i < a.length; i++){
+            if (a[i] % 2 == 0){
+                pares[p] = a[i];
+                p++
+            } else {
+                impares[im] = a[i];
+                im++
+            }
+        }
     }
 }
