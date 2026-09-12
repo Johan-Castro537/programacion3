@@ -11,6 +11,19 @@ public class Punto8{
             a[i] = (int)(Math.random() * (max - min + 1) + min);
             System.out.println("a[" + i + "] = " + a[i]);
         }
+
+        int ma = a[0];
+        int me = a[0];
+        
+        for (int i = 0; i < a.length; i++){
+            if (a[i] > ma){
+                ma = a[i]
+            }
+            if (a[i] < me){
+                me = a[i];
+            }
+        }
+        
     }
 
      
