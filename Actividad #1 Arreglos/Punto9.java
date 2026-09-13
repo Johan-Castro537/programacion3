@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Punto9 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
         int[] arreglo = new int[5];
         int numero;
@@ -23,5 +23,6 @@ public class Punto9 {
             }
         }
         System.out.println("El número " + numero + " aparece " + contador + " veces en el arreglo");
-    }  
-}     
+        }
+    }
+}
