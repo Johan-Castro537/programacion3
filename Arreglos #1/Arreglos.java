@@ -189,9 +189,18 @@ public class Arreglos {
                 System.out.println();
                 break;
 
-
             default:
                 System.out.println("Opción no válida.");
+                break;
+
+            case 6:
+                // Punto 12
+                int[] a = new int[10];
+                int[] b = new int[a.length];
+                int x;
+                int j = 0;
+                
+
                 break;
         }
 
