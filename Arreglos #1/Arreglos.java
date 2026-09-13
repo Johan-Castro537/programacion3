@@ -22,9 +22,8 @@ public class Arreglos {
 
         switch (opcion) {
 
-            // Punto 7
-
             case 1:
+                // Punto 7  
                 int[] pares = new int[10];
                 int[] impares = new int[10];
 
@@ -56,6 +55,7 @@ public class Arreglos {
                 break;
 
             case 2:
+                // Punto 8 
                 int[] numeros = new int[30];
                 int mayor = 0;
                 int menor = 0;
@@ -220,7 +220,18 @@ public class Arreglos {
                     System.out.print("b[" + i + "] = " + b[i] + " ");
                 }
                 break;
+
+            case 7:
+                // Punto 13
+                int[] datos = new int[10];
+                int[] mayores = new int[datos.length];
+                int[] menores = new int[datos.length];
+                int suma = 0;
+                double media;
+                int ma = 0;
+                int me = 0;
         }
+
 
         scanner.close();
     }
