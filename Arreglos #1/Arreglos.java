@@ -67,7 +67,7 @@ public class Arreglos {
                     numeros[i] = scanner.nextInt();
                 }
 
-                
+
                 break;
 
             default:
@@ -77,3 +77,4 @@ public class Arreglos {
 
         scanner.close();
     }
+}
