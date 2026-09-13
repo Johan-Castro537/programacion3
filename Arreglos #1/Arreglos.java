@@ -53,15 +53,27 @@ public class Arreglos {
                 for (int i = 0; i < im; i++) {
                     System.out.print(impares[i] + " ");
                 }
+                break;
+
+            case 2:
+                int[] numeros = new int[30];
+                int mayor = 0;
+                int menor = 0;
+                int vecesmayor = 0;
+                int vecesmenor = 0;
+
+                System.out.println("Ingrese 30 números enteros:");
+                for (int i = 0; i < numeros.length; i++) {
+                    numeros[i] = scanner.nextInt();
+                }
+
+                
+                break;
+
+            default:
+                System.out.println("Opción no válida.");
+                break;
         }
+
+        scanner.close();
     }
-
-    // PUNTO 8
-
-    int[] numeros = new int[30];
-    int[] mayor = 0;
-    int[] menor = 0;
-    int[] vecesmayor = 0;
-    int[] vecesmenor = 0;
-
-}
