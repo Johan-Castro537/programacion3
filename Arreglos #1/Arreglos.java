@@ -209,11 +209,16 @@ public class Arreglos {
                 for (int i = 0; i < a.length; i++){
                     if (a[i] == x){
                         b[j] = i + 1;
-                        j++;
-                        
+                        j++;   
                     }
                 }
 
+                System.out.println("x = " + x);
+                System.out.println("Posiciones: ");
+
+                for (int i = 0; i < j; i++){
+                    System.out.print("b[" + i + "] = " + b[i] + " ");
+                }
                 break;
         }
 
