@@ -130,7 +130,17 @@ public class Arreglos {
                     B[i] = A[i] + A[A.length - 1 - i];
                 }
 
+                System.out.println("Arreglo A:");
+                for (int i = 0; i < A.length; i++) {
+                    System.out.print("A[" + i + "] = " + A[i]);
+                }
+                System.out.println("Arreglo B:");
+                for (int i = 0; i < B.length; i++) {
+                    System.out.print("B[" + i + "] = " + B[i]);
+                }
                 
+                break;
+
             default:
                 System.out.println("Opción no válida.");
                 break;
