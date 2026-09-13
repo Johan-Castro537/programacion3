@@ -101,7 +101,13 @@ public class Arreglos {
 
                 for (int i = 0; i < a.length; i++) {
                     a[i] = (int) (Math.random()* (100 - 1 + 1) + 1);
+
+                x = (int) (Math.random()* (100 - 1 + 1) + 1);
+
+                for (int i = 0; i < a.length; i++){
+                    System.out.println("a[" + i + "] = " + a[i]);
                 }
+            }
 
 
 
