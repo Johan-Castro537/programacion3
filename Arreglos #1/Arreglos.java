@@ -148,7 +148,7 @@ public class Arreglos {
                 int[] positivos = new int[arreglo.length];
                 int[] ceros = new int[arreglo.length];
                 int n = 0;
-                int p = 0;
+                int pos = 0;
                 int c = 0;
 
                 for (int i = 0; i < arreglo.length; i++) {
@@ -161,14 +161,34 @@ public class Arreglos {
                         n++;
                     }
                     if (arreglo[i] > 0) {
-                        positivos[p] = arreglo[i];
-                        p++;
+                        positivos[pos] = arreglo[i];
+                        pos++;
                     }
                     if (arreglo[i] == 0) {
                         ceros[c] = arreglo[i];
                         c++;
                     }
                 }
+
+                System.out.println("Negativos: ");
+                for (int i = 0; i < n; i++) {
+                    System.out.print(negativos[i] + " ");
+                }
+                System.out.println();
+
+                System.out.println("Positivos: ");
+                for (int i = 0; i < pos; i++) {
+                    System.out.print(positivos[i] + " ");
+                }
+                System.out.println();
+
+                System.out.println("Ceros: ");
+                for (int i = 0; i < c; i++) {
+                    System.out.print(ceros[i] + " ");
+                }
+                System.out.println();
+                break;
+
 
             default:
                 System.out.println("Opción no válida.");
