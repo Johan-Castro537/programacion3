@@ -235,10 +235,24 @@ public class Arreglos {
                     datos[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
                     suma += datos[i];
                 }
+
                 for(int i = 0; i <datos.length; i++){
                     suma = suma + datos[i];
                 }
-                
+                media = (double) suma / datos.length;
+
+                for (int i = 0; i < datos.length; i++){
+
+                    if (datos[i] > media){
+                        mayores[ma] = datos[i];
+                        ma++;
+                        
+                    if (datos[i] < media){
+                        menores[me] = datos[i];
+                        me++;
+                    }
+
+                } 
         }
 
 
