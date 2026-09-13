@@ -66,7 +66,7 @@ public class Arreglos {
                 for (int i = 0; i < numeros.length; i++) {
                     numeros[i] = scanner.nextInt();
                 }
-                
+
                 mayor = numeros[0];
                 menor = numeros[0];
 
@@ -78,6 +78,17 @@ public class Arreglos {
                         menor = numeros[i];
                     }
                 }
+
+                for (int i = 0; i < numeros.length; i++) {
+                    if (numeros[i] == mayor) {
+                        vecesmayor++;
+                    }
+                    if (numeros[i] == menor) {
+                        vecesmenor++;
+                    }
+                }
+                System.out.println("El mayor es: " + mayor + " y aparece " + vecesmayor + " veces.");
+                System.out.println("El menor es: " + menor + " y aparece " + vecesmenor + " veces.");
 
                 break;
 
