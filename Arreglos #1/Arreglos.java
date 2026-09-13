@@ -99,6 +99,10 @@ public class Arreglos {
                 int x;
                 int contador = 0;
 
+                for (int i = 0; i < a.length; i++) {
+                    a[i] = (int) (Math.random()* (100 - 1 + 1) + 1);
+                }
+
 
 
 
