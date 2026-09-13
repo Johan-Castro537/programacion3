@@ -93,37 +93,36 @@ public class Arreglos {
                 break;
 
             case 3:
-
                 // Punto 9
                 int[] a = new int[10];
                 int x;
                 int contador = 0;
 
                 for (int i = 0; i < a.length; i++) {
-                    a[i] = (int) (Math.random()* (100 - 1 + 1) + 1);
+                    a[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
+                }
 
-                x = (int) (Math.random()* (100 - 1 + 1) + 1);
+                x = (int) (Math.random() * (100 - 1 + 1) + 1);
 
-                for (int i = 0; i < a.length; i++){
+                for (int i = 0; i < a.length; i++) {
                     System.out.println("a[" + i + "] = " + a[i]);
-                    
+                }
+
                 for (int i = 0; i < a.length; i++) {
                     if (a[i] == x) {
                         contador++;
                     }
                 }
-            }
 
-
-
-
-
-
+                System.out.println("x = " + x);
+                System.out.println("Se encuentra " + contador + " veces.");
+                break;
 
             default:
                 System.out.println("Opción no válida.");
                 break;
-        }  
+        }
+
         scanner.close();
     }
 }
