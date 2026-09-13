@@ -126,6 +126,11 @@ public class Arreglos {
                 for (int i = 0; i < A.length; i++) {
                     A[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
                 }
+                for (int i = 0; i < B.length; i++) {
+                    B[i] = A[i] + A[A.length - 1 - i];
+                }
+
+                
             default:
                 System.out.println("Opción no válida.");
                 break;
