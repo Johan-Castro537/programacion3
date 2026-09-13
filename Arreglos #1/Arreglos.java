@@ -195,28 +195,28 @@ public class Arreglos {
 
             case 6:
                 // Punto 12
-                int[] a = new int[10];
-                int[] b = new int[a.length];
-                int x;
+                int[] vector = new int[10];
+                int[] b = new int[vector.length];
+                int valor;
                 int j = 0;
 
-                for (int i = 0; i < a.length; i++) {
-                    a[i] = (int) (Math.random() * (10 - 1 + 1) + 1);
+                for (int i = 0; i < vector.length; i++) {
+                    vector[i] = (int) (Math.random() * (10 - 1 + 1) + 1);
                 }
 
-                x = (int) (Math.random() * (10 - 1 + 1) + 1);
+                valor = (int) (Math.random() * (10 - 1 + 1) + 1);
 
-                for (int i = 0; i < a.length; i++){
-                    if (a[i] == x){
+                for (int i = 0; i < vector.length; i++) {
+                    if (vector[i] == valor) {
                         b[j] = i + 1;
-                        j++;   
+                        j++;
                     }
                 }
 
-                System.out.println("x = " + x);
+                System.out.println("valor = " + valor);
                 System.out.println("Posiciones: ");
 
-                for (int i = 0; i < j; i++){
+                for (int i = 0; i < j; i++) {
                     System.out.print("b[" + i + "] = " + b[i] + " ");
                 }
                 break;
