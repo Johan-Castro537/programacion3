@@ -199,7 +199,13 @@ public class Arreglos {
                 int[] b = new int[a.length];
                 int x;
                 int j = 0;
-                
+
+                for (int i = 0; i < a.length; i++) {
+                    a[i] = (int) (Math.random() * (10 - 1 + 1) + 1);
+                }
+
+                x = (int) (Math.random() * (10 - 1 + 1) + 1);
+
 
                 break;
         }
