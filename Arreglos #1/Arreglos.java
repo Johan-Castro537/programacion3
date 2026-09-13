@@ -66,7 +66,18 @@ public class Arreglos {
                 for (int i = 0; i < numeros.length; i++) {
                     numeros[i] = scanner.nextInt();
                 }
+                
+                mayor = numeros[0];
+                menor = numeros[0];
 
+                for (int i = 0; i < numeros.length; i++) {
+                    if (numeros[i] > mayor) {
+                        mayor = numeros[i];
+                    }
+                    if (numeros[i] < menor) {
+                        menor = numeros[i];
+                    }
+                }
 
                 break;
 
