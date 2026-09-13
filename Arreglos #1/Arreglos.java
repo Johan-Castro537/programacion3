@@ -206,6 +206,13 @@ public class Arreglos {
 
                 x = (int) (Math.random() * (10 - 1 + 1) + 1);
 
+                for (int i = 0; i < a.length; i++){
+                    if (a[i] == x){
+                        b[j] = i + 1;
+                        j++;
+                        
+                    }
+                }
 
                 break;
         }
