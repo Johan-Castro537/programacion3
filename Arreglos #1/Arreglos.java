@@ -141,9 +141,9 @@ public class Arreglos {
 
                 break;
 
-                case 5:
+            case 5:
                 // Punto 11
-                int[] arreglo = new int
+                int[] arreglo = new int[10];
                 int[] negativos = new int[arreglo.length];
                 int[] positivos = new int[arreglo.length];
                 int[] ceros = new int[arreglo.length];
@@ -155,8 +155,19 @@ public class Arreglos {
                     arreglo[i] = (int) (Math.random() * (10 - (-10) + 1) + (-10));
                 }
 
-                for (int i = 0; i < arreglo.length; i++){
-                    
+                for (int i = 0; i < arreglo.length; i++) {
+                    if (arreglo[i] < 0) {
+                        negativos[n] = arreglo[i];
+                        n++;
+                    }
+                    if (arreglo[i] > 0) {
+                        positivos[p] = arreglo[i];
+                        p++;
+                    }
+                    if (arreglo[i] == 0) {
+                        ceros[c] = arreglo[i];
+                        c++;
+                    }
                 }
 
             default:
