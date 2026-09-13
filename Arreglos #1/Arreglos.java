@@ -15,7 +15,6 @@ public class Arreglos {
         System.out.println("5. Punto 11");
         System.out.println("6. Punto 12");
         System.out.println("7. Punto 13");
-        System.out.println("0. Salir");
 
         System.out.print("Ingrese el número del punto que quiere ejecutar: ");
         opcion = scanner.nextInt();
@@ -23,7 +22,7 @@ public class Arreglos {
         switch (opcion) {
 
             case 1:
-                // Punto 7  
+                // Punto 7
                 int[] pares = new int[10];
                 int[] impares = new int[10];
 
@@ -55,7 +54,7 @@ public class Arreglos {
                 break;
 
             case 2:
-                // Punto 8 
+                // Punto 8
                 int[] numeros = new int[30];
                 int mayor = 0;
                 int menor = 0;
@@ -236,28 +235,27 @@ public class Arreglos {
                     suma += datos[i];
                 }
 
-                for(int i = 0; i <datos.length; i++){
-                    suma = suma + datos[i];
-                }
                 media = (double) suma / datos.length;
 
-                for (int i = 0; i < datos.length; i++){
+                for (int i = 0; i < datos.length; i++) {
 
-                    if (datos[i] > media){
+                    if (datos[i] > media) {
                         mayores[ma] = datos[i];
                         ma++;
+                    }
 
-                    if (datos[i] < media){
+                    if (datos[i] < media) {
                         menores[me] = datos[i];
                         me++;
                     }
-                } 
+                }
 
                 System.out.println("Media: " + media);
                 System.out.println("Números mayores que la media: ");
                 for (int i = 0; i < ma; i++) {
                     System.out.print(mayores[i] + " ");
                 }
+                System.out.println();
                 System.out.println("Menores que la media: ");
                 for (int i = 0; i < me; i++) {
                     System.out.print(menores[i] + " ");
@@ -265,8 +263,6 @@ public class Arreglos {
 
                 break;
         }
-
-
         scanner.close();
     }
 }
