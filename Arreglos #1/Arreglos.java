@@ -246,13 +246,24 @@ public class Arreglos {
                     if (datos[i] > media){
                         mayores[ma] = datos[i];
                         ma++;
-                        
+
                     if (datos[i] < media){
                         menores[me] = datos[i];
                         me++;
                     }
-
                 } 
+
+                System.out.println("Media: " + media);
+                System.out.println("Números mayores que la media: ");
+                for (int i = 0; i < ma; i++) {
+                    System.out.print(mayores[i] + " ");
+                }
+                System.out.println("Menores que la media: ");
+                for (int i = 0; i < me; i++) {
+                    System.out.print(menores[i] + " ");
+                }
+
+                break;
         }
 
 
