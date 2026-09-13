@@ -138,8 +138,20 @@ public class Arreglos {
                 for (int i = 0; i < B.length; i++) {
                     System.out.print("B[" + i + "] = " + B[i]);
                 }
-                
+
                 break;
+
+                case 5:
+                // Punto 11
+                int[] arreglo = new int
+                int[] negativos = new int[arreglo.length];
+                int[] positivos = new int[arreglo.length];
+                int[] ceros = new int[arreglo.length];
+                int n = 0;
+                int p = 0;
+                int c = 0;
+
+                
 
             default:
                 System.out.println("Opción no válida.");
