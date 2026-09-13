@@ -25,4 +25,18 @@ public class Punto11 {
             c++;
         }
     }
-}
+
+        System.out.println("Negativos: ");
+        for(int i = 0; i < n; i++){
+            System.out.println(negativos[i]);
+        }
+        System.out.println("Positivos: ");
+        for(int i = 0; i < p; i++){
+            System.out.println(positivos[i]);
+        }
+
+        System.out.println("Ceros: ");
+        for(int i = 0; i < c; i++){ 
+            System.out.println(ceros[i]);
+        }
+    }
