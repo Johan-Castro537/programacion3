@@ -12,6 +12,17 @@ public class Punto11 {
 
     for(int i = 0; i < a.length; i++){
 
-        
+        if(a[i] < 0){
+            negativos[n] = a[i];
+            n++;
+
+        }else if(a[i] > 0){
+            positivos[p] = a[i];
+            p++;
+
+        }else{
+            ceros[c] = a[i];
+            c++;
+        }
     }
 }
