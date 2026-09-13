@@ -118,6 +118,14 @@ public class Arreglos {
                 System.out.println("Se encuentra " + contador + " veces.");
                 break;
 
+            case 4:
+                // Punto 10
+                int[] A = new int[8];
+                int[] B = new int[4];
+
+                for (int i = 0; i < A.length; i++) {
+                    A[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
+                }
             default:
                 System.out.println("Opción no válida.");
                 break;
