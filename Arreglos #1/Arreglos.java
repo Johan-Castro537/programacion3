@@ -31,4 +31,13 @@ public class Arreglos {
             System.out.print(impares[i] + " ");
         }
     }
+
+    // PUNTO 8
+
+    int[] numeros = new int[30];
+    int[] mayor = 0;
+    int[] menor = 0;
+    int[] vecesmayor = 0;
+    int[] vecesmenor = 0;
+    
 }
