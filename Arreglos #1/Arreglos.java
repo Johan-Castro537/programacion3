@@ -230,6 +230,15 @@ public class Arreglos {
                 double media;
                 int ma = 0;
                 int me = 0;
+
+                for (int i = 0; i < datos.length; i++) {
+                    datos[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
+                    suma += datos[i];
+                }
+                for(int i = 0; i <datos.length; i++){
+                    suma = suma + datos[i];
+                }
+                
         }
 
 
