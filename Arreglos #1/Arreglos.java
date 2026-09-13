@@ -92,11 +92,23 @@ public class Arreglos {
 
                 break;
 
+            case 3:
+
+                // Punto 9
+                int[] a = new int[10];
+                int x;
+                int contador = 0;
+
+
+
+
+
+
+
             default:
                 System.out.println("Opción no válida.");
                 break;
-        }
-
+        }  
         scanner.close();
     }
 }
