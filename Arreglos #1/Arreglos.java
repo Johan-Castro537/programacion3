@@ -151,7 +151,13 @@ public class Arreglos {
                 int p = 0;
                 int c = 0;
 
-                
+                for (int i = 0; i < arreglo.length; i++) {
+                    arreglo[i] = (int) (Math.random() * (10 - (-10) + 1) + (-10));
+                }
+
+                for (int i = 0; i < arreglo.length; i++){
+                    
+                }
 
             default:
                 System.out.println("Opción no válida.");
