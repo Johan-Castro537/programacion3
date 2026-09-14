@@ -317,13 +317,38 @@ public class Matrices {
                 int mayorMes = 0;
                 int menorMes = 0;
 
-                for(int j = 0; j < 12; j++) {
-
+                for (int j = 0; j < 12; j++) {
                     int sumaMes = 0;
-                    
-                    for(int i = 0; i < cereales.length; i++) {
+
+                    for (int i = 0; i < cereales.length; i++) {
                         sumaMes += cereales[i][j];
                     }
-                }        }
+
+                    if (sumaMes > promedio) {
+                        mesesMayor++;
+                    }
+
+                    if (sumaMes < promedio) {
+                        mesesMenor++;
+                    }
+
+                    if (sumaMes > mayorMes) {
+                        mayorMes = sumaMes;
+                        mesesMayor = j + 1;
+                    }
+
+                    if (sumaMes < menorMes || j == 0) {
+                        menorMes = sumaMes;
+                        mesesMenor = j + 1;
+                    }
+                }
+
+                System.out.println("Meses con suma mayor al promedio: " + mesesMayor);
+                System.out.println("Meses con suma menor al promedio: " + mesesMenor);
+                System.out.println("Mes de mayor suma: " + mesesMayor + " (" + mayorMes + ")");
+                System.out.println("Mes de menor suma: " + mesesMenor + " (" + menorMes + ")");
+
+                break;
+        }
     }
 }
