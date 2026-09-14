@@ -220,6 +220,15 @@ public class Matrices {
 
                 System.out.println(cad22);
 
+                int mayor = a22[0][0];
+                int menor = a22[0][0];
+
+                int filaMayor = 0;
+                int columnaMayor = 0;
+                int filaMenor = 0;
+                int columnaMenor = 0;
+                
+
         }
     }
 }
