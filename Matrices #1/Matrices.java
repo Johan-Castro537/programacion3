@@ -56,6 +56,13 @@ public class Matrices {
 
             case 2:
                 // Punto 18
+                int [][] t_multiplicar = new int[10][10];
+                
+                for (int i = 0; i < t_multiplicar.length; i++) {
+                    for (int j = 0; j < t_multiplicar[i].length; j++) {
+                        t_multiplicar[i][j] = (i + 1) * (j + 1);
+                    }
+                }
         }
     }
 }
