@@ -125,6 +125,16 @@ public class Matrices {
 
                 System.out.println(cad19);
                 break;
+            
+            case 4:
+                // Punto 20
+                int[][] a20 = new int[10][10];
+                
+                for (int i = 0; i < a20.length; i++) {
+                    for (int j = 0; j < a20[i].length; j++) {
+                        
+                    }
+                }
         }
     }
 }
