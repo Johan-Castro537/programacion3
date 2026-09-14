@@ -4,8 +4,9 @@ public class Matrices {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int opcion;
+
+        // Menu para acceder a los ejercicios
 
         System.out.println("1. Punto 17");
         System.out.println("2. Punto 18");
@@ -20,6 +21,7 @@ public class Matrices {
         opcion = scanner.nextInt();
 
         switch (opcion) {
+
             case 1:
                 // Punto 17
                 int[][] a = {
@@ -51,18 +53,28 @@ public class Matrices {
                     }
                     System.out.println("Suma de la columna " + j + ": " + suma);
                 }
-
                 break;
 
             case 2:
                 // Punto 18
-                int [][] t_multiplicar = new int[10][10];
-                
+                int[][] t_multiplicar = new int[10][10];
+
                 for (int i = 0; i < t_multiplicar.length; i++) {
                     for (int j = 0; j < t_multiplicar[i].length; j++) {
                         t_multiplicar[i][j] = (i + 1) * (j + 1);
                     }
                 }
+
+                for (int i = 0; i < t_multiplicar.length; i++) {
+                    for (int j = 0; j < t_multiplicar[i].length; j++) {
+                        System.out.printf("%4d", t_multiplicar[i][j]);
+                    }
+                    System.out.println();
+                }
+                break;
+
+            case 3:
+                // Punto 19
         }
     }
 }
