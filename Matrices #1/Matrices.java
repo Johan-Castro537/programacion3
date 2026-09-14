@@ -132,9 +132,32 @@ public class Matrices {
                 
                 for (int i = 0; i < a20.length; i++) {
                     for (int j = 0; j < a20[i].length; j++) {
-                        
+                       
+                        if (i <= j) {
+                            a20[i][j] = 1;
+                        } else {
+                            a20[i][j] = 0;
+                        }
                     }
                 }
+
+                String cad20 = "";
+
+                for(int i = 0; i < a20.length; i++){
+                    for(int j = 0; j < a20[i].length; j++){
+                        cad20 += "|" + a20[i][j] + "|";
+                    }
+
+                    cad20 += "\n";
+                }
+
+                System.out.println(cad20);
+
+                break;
+
+            case 5:
+                // Punto 21
+
         }
     }
 }
