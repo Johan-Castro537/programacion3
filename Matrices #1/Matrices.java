@@ -311,6 +311,19 @@ public class Matrices {
                 }
 
                 double promedio = (double)sumaTotal / 48;
-        }
+
+                int mesesMayor = 0;
+                int mesesMenor = 0;
+                int mayorMes = 0;
+                int menorMes = 0;
+
+                for(int j = 0; j < 12; j++) {
+
+                    int sumaMes = 0;
+                    
+                    for(int i = 0; i < cereales.length; i++) {
+                        sumaMes += cereales[i][j];
+                    }
+                }        }
     }
 }
