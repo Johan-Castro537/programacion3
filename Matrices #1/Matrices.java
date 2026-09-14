@@ -159,7 +159,16 @@ public class Matrices {
                 // Punto 21
                 int[][] a21 = new int[5][6];
                 int[] b21 = new int[a21.length];
-                
+
+                for(int i = 0; i < a21.length; i++){
+                    for(int j = 0; j < a21[i].length; j++){
+                        a21[i][j] = (int) (Math.random() * (20 - 1 + 1) + 1);
+                    }
+                }
+
+                for(int i = 0; i < a21.length; i++) {
+                    for(int j = 0; j < a21[i].length; j++) {
+                }
         }
     }
 }
