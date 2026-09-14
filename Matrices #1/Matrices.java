@@ -33,6 +33,15 @@ public class Matrices {
                         System.out.println("a[" + i + "][" + j + "] = " + a[i][j]);
                     }
                 }
+
+                for(int i = 0; i < a.length; i++) {
+                    int suma = 0;
+
+                    for (int j = 0; j < a[i].length; j++) {
+                        suma += a[i][j];
+                    }
+                    System.out.println("Suma de la fila " + i + ": " + suma);
+                }
         }
     }
 }
