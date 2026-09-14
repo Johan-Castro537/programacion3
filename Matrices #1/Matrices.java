@@ -22,8 +22,17 @@ public class Matrices {
         switch (opcion) {
             case 1:
                 // Punto 17
-                
-        
+                int[][] a = {
+                    { 5, 8, 6 },
+                    { 1, 3, 2 },
+                    { 4, 7, 9 }
+                };
+
+                for(int i = 0; i < a.length; i++) {
+                    for (int j = 0; j < a[i].length; j++) {
+                        System.out.println("a[" + i + "][" + j + "] = " + a[i][j]);
+                    }
+                }
         }
     }
 }
