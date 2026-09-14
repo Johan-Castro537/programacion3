@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Matrices {
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,18 +23,18 @@ public class Matrices {
             case 1:
                 // Punto 17
                 int[][] a = {
-                    { 5, 8, 6 },
-                    { 1, 3, 2 },
-                    { 4, 7, 9 }
+                        { 5, 8, 6 },
+                        { 1, 3, 2 },
+                        { 4, 7, 9 }
                 };
 
-                for(int i = 0; i < a.length; i++) {
+                for (int i = 0; i < a.length; i++) {
                     for (int j = 0; j < a[i].length; j++) {
                         System.out.println("a[" + i + "][" + j + "] = " + a[i][j]);
                     }
                 }
 
-                for(int i = 0; i < a.length; i++) {
+                for (int i = 0; i < a.length; i++) {
                     int suma = 0;
 
                     for (int j = 0; j < a[i].length; j++) {
@@ -42,6 +42,20 @@ public class Matrices {
                     }
                     System.out.println("Suma de la fila " + i + ": " + suma);
                 }
+
+                for (int j = 0; j < a[0].length; j++) {
+                    int suma = 0;
+
+                    for (int i = 0; i < a.length; i++) {
+                        suma += a[i][j];
+                    }
+                    System.out.println("Suma de la columna " + j + ": " + suma);
+                }
+
+                break;
+
+            case 2:
+                // Punto 18
         }
     }
 }
