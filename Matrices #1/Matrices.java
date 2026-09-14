@@ -191,9 +191,9 @@ public class Matrices {
                 for (int i = 0; i < b21.length; i++) {
                     System.out.println("B[" + i + "] = " + b21[i]);
                 }
-            break;
+                break;
 
-        case 6:   
+            case 6:
                 // Punto 22
                 System.out.println("Ingrese el tamaño de filas: ");
                 int filas = scanner.nextInt();
@@ -202,6 +202,24 @@ public class Matrices {
                 int columnas = scanner.nextInt();
 
                 int[][] a22 = new int[filas][columnas];
-        }   
+
+                for (int i = 0; i < a22.length; i++) {
+                    for (int j = 0; j < a22[i].length; j++) {
+                        a22[i][j] = (int) (Math.random() * (100 - 1 + 1) + 1);
+                    }
+                }
+                String cad22 = "";
+
+                for (int i = 0; i < a22.length; i++) {
+                    for (int j = 0; j < a22[i].length; j++) {
+                        cad22 += "|" + a22[i][j] + "|";
+                    }
+
+                    cad22 += "\n";
+                }
+
+                System.out.println(cad22);
+
+        }
     }
 }
