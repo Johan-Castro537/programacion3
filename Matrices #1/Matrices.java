@@ -244,8 +244,15 @@ public class Matrices {
                         }
                     }
                 }
-
                 
+                System.out.println("Mayor = " + mayor);
+                System.out.println("Posicion = [" + filaMayor + "][" + columnaMayor + "]");
+
+                System.out.println("Menor = " + menor);
+                System.out.println("Posicion = [" + filaMenor + "][" + columnaMenor + "]");
+
+                break;
+
 
         }
     }
