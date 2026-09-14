@@ -263,13 +263,13 @@ public class Matrices {
                     }
                 }
 
-                for(int i = 0; i < a23.length; i++) {
+                for (int i = 0; i < a23.length; i++) {
 
                     int mayorabs = 0;
 
-                    for(int j = 0; j < a23[i].length; j++) {
+                    for (int j = 0; j < a23[i].length; j++) {
 
-                        if(Math.abs(a23[i][j]) > mayorabs) {
+                        if (Math.abs(a23[i][j]) > mayorabs) {
                             mayorabs = Math.abs(a23[i][j]);
                         }
                     }
@@ -278,8 +278,8 @@ public class Matrices {
                 }
                 String cad23 = "";
 
-                for(int i = 0; i < a23.length; i++){
-                    for(int j = 0; j < a23[i].length; j++){
+                for (int i = 0; i < a23.length; i++) {
+                    for (int j = 0; j < a23[i].length; j++) {
                         cad23 += "|" + a23[i][j] + "|";
                     }
 
@@ -290,6 +290,17 @@ public class Matrices {
 
                 break;
 
+            case 8:
+                // Punto 24
+                int[][] cereales = new int[4][12];
+
+                for (int i = 0; i < cereales.length; i++) {
+                    System.out.println("Cereal " + (i + 1));
+
+                    for (int j = 0; j < cereales[i].length; j++) {
+                        System.out.print("Mes " + (j + 1));
+                    }
+                }
         }
     }
 }
