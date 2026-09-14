@@ -244,7 +244,7 @@ public class Matrices {
                         }
                     }
                 }
-                
+
                 System.out.println("Mayor = " + mayor);
                 System.out.println("Posicion = [" + filaMayor + "][" + columnaMayor + "]");
 
@@ -253,6 +253,15 @@ public class Matrices {
 
                 break;
 
+            case 7:
+                // Punto 23
+                int[][] a23 = new int[5][6];
+
+                for (int i = 0; i < a23.length; i++) {
+                    for (int j = 0; j < a23[i].length; j++) {
+                        a23[i][j] = (int) (Math.random() * (20 - (-20) + 1) + -20);
+                    }
+                }
 
         }
     }
