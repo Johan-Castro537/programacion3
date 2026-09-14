@@ -75,6 +75,13 @@ public class Matrices {
 
             case 3:
                 // Punto 19
+                int[][] a19 = new int[5][5];
+
+            for(int i = 0; i < a19.length; i++){
+                for(int j = 0; j < a19[i].length; j++){
+                    
+                }
+            }
         }
     }
 }
