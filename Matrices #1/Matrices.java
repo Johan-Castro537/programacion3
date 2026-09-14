@@ -53,6 +53,19 @@ public class Matrices {
                     }
                     System.out.println("Suma de la columna " + j + ": " + suma);
                 }
+
+                String cad = "";
+
+                for(int i = 0; i < a.length; i++){
+                    for(int j = 0; j < a[i].length; j++){
+                        cad += "|" + a[i][j] + "|";
+                    }
+
+                    cad += "\n";
+                }
+
+                System.out.println(cad);
+
                 break;
 
             case 2:
@@ -71,17 +84,47 @@ public class Matrices {
                     }
                     System.out.println();
                 }
+
+                String cad18 = "";
+
+                for(int i = 0; i < t_multiplicar.length; i++){
+                    for(int j = 0; j < t_multiplicar[i].length; j++){
+                        cad18 += "|" + t_multiplicar[i][j] + "|";
+                    }
+
+                    cad18 += "\n";
+                }
+
+                System.out.println(cad18);
+
                 break;
 
             case 3:
                 // Punto 19
                 int[][] a19 = new int[5][5];
 
-            for(int i = 0; i < a19.length; i++){
-                for(int j = 0; j < a19[i].length; j++){
-                    
+                for (int i = 0; i < a19.length; i++) {
+                    for (int j = 0; j < a19[i].length; j++) {
+                        if (i == j) {
+                            a19[i][j] = 1;
+                        } else {
+                            a19[i][j] = 0;
+                        }
+                    }
                 }
-            }
+
+                String cad19 = "";
+
+                for (int i = 0; i < a19.length; i++) {
+                    for (int j = 0; j < a19[i].length; j++) {
+                        cad19 += "|" + a19[i][j] + "|";
+                    }
+
+                    cad19 += "\n";
+                }
+
+                System.out.println(cad19);
+                break;
         }
     }
 }
