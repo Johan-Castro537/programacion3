@@ -227,6 +227,24 @@ public class Matrices {
                 int columnaMayor = 0;
                 int filaMenor = 0;
                 int columnaMenor = 0;
+
+                for (int i = 0; i < a22.length; i++) {
+                    for (int j = 0; j < a22[i].length; j++) {
+
+                        if (a22[i][j] > mayor) {
+                            mayor = a22[i][j];
+                            filaMayor = i;
+                            columnaMayor = j;
+                        }
+
+                        if (a22[i][j] < menor) {
+                            menor = a22[i][j];
+                            filaMenor = i;
+                            columnaMenor = j;
+                        }
+                    }
+                }
+
                 
 
         }
