@@ -157,7 +157,9 @@ public class Matrices {
 
             case 5:
                 // Punto 21
-
+                int[][] a21 = new int[5][6];
+                int[] b21 = new int[a21.length];
+                
         }
     }
 }
