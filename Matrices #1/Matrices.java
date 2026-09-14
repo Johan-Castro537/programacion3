@@ -273,7 +273,22 @@ public class Matrices {
                             mayorabs = Math.abs(a23[i][j]);
                         }
                     }
+
+                    a23[i][a23[i].length - 1] = mayorabs;
                 }
+                String cad23 = "";
+
+                for(int i = 0; i < a23.length; i++){
+                    for(int j = 0; j < a23[i].length; j++){
+                        cad23 += "|" + a23[i][j] + "|";
+                    }
+
+                    cad23 += "\n";
+                }
+
+                System.out.println(cad23);
+
+                break;
 
         }
     }
