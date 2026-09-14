@@ -191,6 +191,17 @@ public class Matrices {
                 for (int i = 0; i < b21.length; i++) {
                     System.out.println("B[" + i + "] = " + b21[i]);
                 }
-        }
+            break;
+
+        case 6:   
+                // Punto 22
+                System.out.println("Ingrese el tamaño de filas: ");
+                int filas = scanner.nextInt();
+
+                System.out.println("Ingrese el tamaño de columnas: ");
+                int columnas = scanner.nextInt();
+
+                int[][] a22 = new int[filas][columnas];
+        }   
     }
 }
