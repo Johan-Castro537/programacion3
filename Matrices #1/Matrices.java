@@ -56,8 +56,8 @@ public class Matrices {
 
                 String cad = "";
 
-                for(int i = 0; i < a.length; i++){
-                    for(int j = 0; j < a[i].length; j++){
+                for (int i = 0; i < a.length; i++) {
+                    for (int j = 0; j < a[i].length; j++) {
                         cad += "|" + a[i][j] + "|";
                     }
 
@@ -87,8 +87,8 @@ public class Matrices {
 
                 String cad18 = "";
 
-                for(int i = 0; i < t_multiplicar.length; i++){
-                    for(int j = 0; j < t_multiplicar[i].length; j++){
+                for (int i = 0; i < t_multiplicar.length; i++) {
+                    for (int j = 0; j < t_multiplicar[i].length; j++) {
                         cad18 += "|" + t_multiplicar[i][j] + "|";
                     }
 
@@ -125,14 +125,14 @@ public class Matrices {
 
                 System.out.println(cad19);
                 break;
-            
+
             case 4:
                 // Punto 20
                 int[][] a20 = new int[10][10];
-                
+
                 for (int i = 0; i < a20.length; i++) {
                     for (int j = 0; j < a20[i].length; j++) {
-                       
+
                         if (i <= j) {
                             a20[i][j] = 1;
                         } else {
@@ -143,8 +143,8 @@ public class Matrices {
 
                 String cad20 = "";
 
-                for(int i = 0; i < a20.length; i++){
-                    for(int j = 0; j < a20[i].length; j++){
+                for (int i = 0; i < a20.length; i++) {
+                    for (int j = 0; j < a20[i].length; j++) {
                         cad20 += "|" + a20[i][j] + "|";
                     }
 
@@ -160,14 +160,36 @@ public class Matrices {
                 int[][] a21 = new int[5][6];
                 int[] b21 = new int[a21.length];
 
-                for(int i = 0; i < a21.length; i++){
-                    for(int j = 0; j < a21[i].length; j++){
+                for (int i = 0; i < a21.length; i++) {
+                    for (int j = 0; j < a21[i].length; j++) {
                         a21[i][j] = (int) (Math.random() * (20 - 1 + 1) + 1);
                     }
                 }
 
-                for(int i = 0; i < a21.length; i++) {
-                    for(int j = 0; j < a21[i].length; j++) {
+                for (int i = 0; i < a21.length; i++) {
+                    for (int j = 0; j < a21[i].length; j++) {
+
+                        if (a21[i][j] % 2 == 0) {
+                            b21[i] += a21[i][j];
+                        }
+                    }
+                }
+                String cad21 = "";
+
+                for (int i = 0; i < a21.length; i++) {
+                    for (int j = 0; j < a21[i].length; j++) {
+                        cad21 += "|" + a21[i][j] + "|";
+                    }
+
+                    cad21 += "\n";
+                }
+
+                System.out.println(cad21);
+
+                System.out.println("Vector B:");
+
+                for (int i = 0; i < b21.length; i++) {
+                    System.out.println("B[" + i + "] = " + b21[i]);
                 }
         }
     }
