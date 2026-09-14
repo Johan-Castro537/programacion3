@@ -301,6 +301,16 @@ public class Matrices {
                         System.out.print("Mes " + (j + 1));
                     }
                 }
+
+                int sumaTotal = 0;
+
+                for (int i = 0; i < cereales.length; i++) {
+                    for (int j = 0; j < cereales[i].length; j++) {
+                        sumaTotal = sumaTotal + cereales[i][j];
+                    }
+                }
+
+                double promedio = (double)sumaTotal / 48;
         }
     }
 }
