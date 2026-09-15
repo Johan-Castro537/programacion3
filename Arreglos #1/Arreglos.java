@@ -119,25 +119,18 @@ public class Arreglos {
 
             case 4:
                 // Punto 10
-                int[] A = new int[8];
-                int[] B = new int[4];
 
-                for (int i = 0; i < A.length; i++) {
-                    A[i] = (int) (Math.random() * (100 - 1 + 1) + 1);
-                }
-                for (int i = 0; i < B.length; i++) {
-                    B[i] = A[i] + A[A.length - 1 - i];
-                }
+                int[] a = { 8, 5, 3, 10, 2, 8, 1 };
+                int[] b = new int[a.length];
 
-                System.out.println("Arreglo A:");
-                for (int i = 0; i < A.length; i++) {
-                    System.out.print("A[" + i + "] = " + A[i]);
-                }
-                System.out.println("Arreglo B:");
-                for (int i = 0; i < B.length; i++) {
-                    System.out.print("B[" + i + "] = " + B[i]);
+                for (int i = 0; i < a.length; i++) {
+
+                    b[i] = [i] + a[a.length - 1 - i];
                 }
 
+                for (int i = 0; i < b.length; i++) {
+                    System.out.println("B[" + i + "] = " + b[i]);
+                }
                 break;
 
             case 5:
@@ -195,7 +188,7 @@ public class Arreglos {
             case 6:
                 // Punto 12
                 int[] vector = new int[10];
-                int[] b = new int[vector.length];
+                int[] b2 = new int[vector.length];
                 int valor;
                 int j = 0;
 
@@ -207,7 +200,7 @@ public class Arreglos {
 
                 for (int i = 0; i < vector.length; i++) {
                     if (vector[i] == valor) {
-                        b[j] = i + 1;
+                        b2[j] = i + 1;
                         j++;
                     }
                 }
@@ -216,7 +209,7 @@ public class Arreglos {
                 System.out.println("Posiciones: ");
 
                 for (int i = 0; i < j; i++) {
-                    System.out.print("b[" + i + "] = " + b[i] + " ");
+                    System.out.print("b[" + i + "] = " + b2[i] + " ");
                 }
                 break;
 
