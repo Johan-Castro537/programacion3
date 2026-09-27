@@ -91,35 +91,10 @@ public class CinemaStar
         }
     }
 
-    private static void asignarPeliculaSala(Scanner scanner, Sala[] salas, Pelicula[] peliculasRegistradas, int cantidadPeliculas)
-    {
-        if (cantidadPeliculas == 0) {
-            System.out.println("\nNo hay peliculas registradas");
-            return;
-        }
-
-        mostrarListaPeliculas(peliculasRegistradas, cantidadPeliculas);
-        System.out.print("Seleccione el numero de pelicula: ");
-        int numeroPelicula = scanner.nextInt();
-        if (numeroPelicula < 1 || numeroPelicula > cantidadPeliculas) {
-            System.out.println("\nNumero de pelicula no valido");
-            return;
-        }
-
-        System.out.print("Seleccione el numero de sala (1-" + salas.length + "): ");
-        int numeroSala = scanner.nextInt();
-        if (numeroSala < 1 || numeroSala > salas.length) {
-            System.out.println("\nNumero de sala no valido");
-            return;
-        }
-
-        salas[numeroSala - 1].asignarFuncion(peliculasRegistradas[numeroPelicula - 1]);
-    }
-
-        private static void menuFunciones(Scanner scanner, Sala[] salas, Pelicula[] peliculaRegistradas, int cantidadPeliculas)
+       private static void menuFunciones(Scanner scanner, Sala[] salas, Pelicula[] peliculaRegistradas, int cantidadPeliculas)
     {
         if(cantidadPeliculas == 0){
-            System.out.println("\n****Primer0 debes registrar al menos una pelicula (opcion 1 del menu principal)****");
+            System.out.println("\n==== Primero debes registrar al menos una pelicula (opcion 1 del menu principal) ====");
         } else {
             int opcionMenuAnidado = 0;
             
@@ -139,6 +114,39 @@ public class CinemaStar
                     }
                 } else if (opcionMenuAnidado != 3) {
                     System.out.println("\nOpcion no valida, intentar de nuevo");
+                }
+            }
+        }
+    }
+
+private static void asignarPeliculaASala(Scanner scanner, Sala[] salas, Pelicula[] peliculaRegistradas, int cantidadPeliculas)
+    {
+        System.out.println("\nIngrese el numero de sala (1, 2 o 3): ");
+        int idSala = scanner.nextInt();
+
+        if(idSala < 1 || idSala > 3){
+            System.out.println("\n***Sala inexistente***");
+        } else {
+            mostrarListaPeliculas(peliculaRegistradas, cantidadPeliculas);
+            System.out.print("Seleccione el numero de la pelicula: ");
+            int idPelicula = scanner.nextInt();
+
+            if(idPelicula < 1 || idPelicula > cantidadPeliculas){
+                System.out.println("\n***Pelicula invalida***");
+            } else {
+                System.out.println("\nFranjas horarias disponibles:");
+                System.out.println("1. 14:00 - 16:30");
+                System.out.println("2. 16:30 - 19:00");
+                System.out.println("3. 19:00 - 21:00");
+                System.out.print("Seleccione la franja: ");
+                int franjaSeleccionada = scanner.nextInt();
+
+                if(franjaSeleccionada < 1 || franjaSeleccionada > 3) {
+                    System.out.println("\n***Franja invalida.***");
+                } else {
+                    Sala salaSeleccionada = salas[idSala - 1];
+                    Pelicula peliculaSeleccionada = peliculaRegistradas[idPelicula - 1];
+                    salaSeleccionada.asignarPelicula(franjaSeleccionada, peliculaSeleccionada);
                 }
             }
         }
