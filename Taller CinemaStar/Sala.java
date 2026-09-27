@@ -53,13 +53,15 @@ public class Sala
     //busca el indice de toda la fila del matriz dependiendo que letra escogió
     public int buscarIndiceFila(String pFila)
     {
+int indiceFila = 1;
         int indiceEncontrado = -1;
-        for (int indiceFila = 1; indiceFila < todosAsientos.length; indiceFila = indiceFila+1){
-            if (todosAsientos[indiceFila][0].equals(pFila))
-            {
+        boolean encontrado = false;
+while (indiceFila < todosAsientos.length && encontrado == false) {
+            if (todosAsientos[indiceFila][0].equals(pFila)) {
                 indiceEncontrado = indiceFila;
-            }   
+                encontrado = true; // esto detiene el while
+            }
+            indiceFila = indiceFila + 1;
         }
         return indiceEncontrado;
-    }
 }
