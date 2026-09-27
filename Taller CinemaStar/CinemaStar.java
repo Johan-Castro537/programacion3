@@ -151,4 +151,23 @@ private static void asignarPeliculaASala(Scanner scanner, Sala[] salas, Pelicula
             }
         }
     }
+    private static void menuVentas(Scanner scanner, Sala[] salas)
+    {
+        System.out.println("\nIngrese el numero de sala (1, 2 o 3");
+        int idSala = scanner.nextInt();
+
+        if(idSala < 1 || idSala > 3){
+            System.out.println("\nEsta sala no existe");
+        } else {
+            System.out.println("\nIngrese el horario que necesita (1, 2 o 3)");
+            int franjaSeleccionada = scanner.nextInt();
+
+            if (franjaSeleccionada < 1 || franjaSeleccionada > 3){
+                System.out.println("\n === No existe ===");
+            } else {
+                Sala salaSeleccionada = salas[idSala - 1];
+                salaSeleccionada.venderEntradas(scanner, franjaSeleccionada);
+            }
+        }
+    }
 }
