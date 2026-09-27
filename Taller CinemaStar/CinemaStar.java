@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CinemaStar
@@ -42,4 +43,31 @@ public class CinemaStar
         } 
 
         scanner.close();
+        }
+
+        private static void menuPeliculas(Scanner scanner, ArrayList<Pelicula> peliculas) {
+        int opcionSubmenu = 0;
+        
+        while (opcionSubmenu != 3) {
+            System.out.println("\n=== Menu de Peliculas ===");
+            System.out.println("1. Registrar Pelicula");
+            System.out.println("2. Ver Peliculas");
+            System.out.println("3. Volver al menu principal");
+            System.out.print("Seleccione una opcion: ");
+            opcionSubmenu = scanner.nextInt();
+
+            if (opcionSubmenu == 1) {
+                if (peliculas.size() >= 20) {
+                    System.out.println("\nNo hay espacio para peliculas");
+                } else {
+                    peliculas.add(Pelicula.solicitarDatos(scanner));
+                    System.out.println("\nPelicula registrada con exito");
+                }
+            } else if (opcionSubmenu == 2) {
+                mostrarListaPeliculas(peliculas);
+            } else if (opcionSubmenu != 3) {
+                System.out.println("\nOpcion no valida, intenta de nuevo, por favor");
+            }
+        }
+    }
     }
