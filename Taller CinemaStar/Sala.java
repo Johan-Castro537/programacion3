@@ -66,4 +66,9 @@ while (indiceFila < todosAsientos.length && encontrado == false) {
         }
         return indiceEncontrado;
     }
+
+    public void asignarFuncion(int franjaSeleccionada, Pelicula peliculaSeleccionada) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asignarFuncion'");
+    }
 }
