@@ -90,4 +90,57 @@ public class CinemaStar
             }
         }
     }
+
+    private static void asignarPeliculaSala(Scanner scanner, Sala[] salas, Pelicula[] peliculasRegistradas, int cantidadPeliculas)
+    {
+        if (cantidadPeliculas == 0) {
+            System.out.println("\nNo hay peliculas registradas");
+            return;
+        }
+
+        mostrarListaPeliculas(peliculasRegistradas, cantidadPeliculas);
+        System.out.print("Seleccione el numero de pelicula: ");
+        int numeroPelicula = scanner.nextInt();
+        if (numeroPelicula < 1 || numeroPelicula > cantidadPeliculas) {
+            System.out.println("\nNumero de pelicula no valido");
+            return;
+        }
+
+        System.out.print("Seleccione el numero de sala (1-" + salas.length + "): ");
+        int numeroSala = scanner.nextInt();
+        if (numeroSala < 1 || numeroSala > salas.length) {
+            System.out.println("\nNumero de sala no valido");
+            return;
+        }
+
+        salas[numeroSala - 1].asignarFuncion(peliculasRegistradas[numeroPelicula - 1]);
+    }
+
+        private static void menuFunciones(Scanner scanner, Sala[] salas, Pelicula[] peliculaRegistradas, int cantidadPeliculas)
+    {
+        if(cantidadPeliculas == 0){
+            System.out.println("\n****Primer0 debes registrar al menos una pelicula (opcion 1 del menu principal)****");
+        } else {
+            int opcionMenuAnidado = 0;
+            
+            while (opcionMenuAnidado != 3) {
+                System.out.println("\n--- Asignacion de Funciones ---");
+                System.out.println("1. Asignar pelicula a una sala/franja");
+                System.out.println("2. Ver funciones asignadas");
+                System.out.println("3. Volver al menu principal");
+                System.out.print("\nSeleccione una opcion: ");
+                opcionMenuAnidado = scanner.nextInt();
+
+                if (opcionMenuAnidado == 1) {
+                    asignarPeliculaSala(scanner, salas, peliculaRegistradas, cantidadPeliculas);
+                } else if (opcionMenuAnidado == 2) {
+                    for (int indiceSala = 0; indiceSala < salas.length; indiceSala++) {
+                        salas[indiceSala].mostrarFunciones();
+                    }
+                } else if (opcionMenuAnidado != 3) {
+                    System.out.println("\nOpcion no valida, intentar de nuevo");
+                }
+            }
+        }
+    }
 }
