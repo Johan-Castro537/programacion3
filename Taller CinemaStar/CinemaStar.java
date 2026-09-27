@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CinemaStar
@@ -45,7 +44,7 @@ public class CinemaStar
         scanner.close();
         }
 
-        private static void menuPeliculas(Scanner scanner, ArrayList<Pelicula> peliculas) {
+    private static int menuPeliculas(Scanner scanner, Pelicula[] peliculas, int cantidadPeliculas) {
         int opcionMenuAnidado = 0;
         
         while (opcionMenuAnidado != 3) {
@@ -57,18 +56,38 @@ public class CinemaStar
             opcionMenuAnidado = scanner.nextInt();
 
             if (opcionMenuAnidado == 1) {
-                if (peliculas.size() >= 20) {
+                if (cantidadPeliculas >= peliculas.length) {
                     System.out.println("\nNo hay espacio para peliculas");
                 } else {
-                    peliculas.add(Pelicula.solicitarDatos(scanner));
+                    peliculas[cantidadPeliculas] = Pelicula.solicitarDatos(scanner);
+                    cantidadPeliculas++;
                     System.out.println("\nPelicula registrada con exito");
                 }
             } else if (opcionMenuAnidado == 2) {
-                mostrarListaPeliculas(peliculas);
+                if (cantidadPeliculas == 0) {
+                    System.out.println("\nNo hay peliculas registradas");
+                } else {
+                    for (int i = 0; i < cantidadPeliculas; i++) {
+                        System.out.println(peliculas[i]);
+                    }
+                }
             } else if (opcionMenuAnidado != 3) {
                 System.out.println("\nOpcion no valida, intenta de nuevo, por favor");
             }
         }
         return cantidadPeliculas;
     }
+
+    private static void mostrarListaPeliculas(Pelicula[] peliculasRegistradas, int cantidadPeliculas)
+    {
+        if(cantidadPeliculas == 0){
+            System.out.println("\n En este momento no contamos con peliculas en fucion, vuelva pronto");
+        }else{
+            System.out.println("\n --- Peliculas Registradas ---");
+            for (int indice = 0; indice < cantidadPeliculas; indice++) {
+                System.out.println((indice + 1));
+                peliculasRegistradas[indice].mostrarInfo();
+            }
+        }
     }
+}
