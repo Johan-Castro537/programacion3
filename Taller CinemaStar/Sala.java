@@ -64,4 +64,5 @@ while (indiceFila < todosAsientos.length && encontrado == false) {
             indiceFila = indiceFila + 1;
         }
         return indiceEncontrado;
+    }
 }
