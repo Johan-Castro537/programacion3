@@ -120,12 +120,11 @@ public class Arreglos {
             case 4:
                 // Punto 10
 
-                int[] a = { 8, 5, 3, 10, 2, 8, 1 };
-                int[] b = new int[a.length];
+                int[] a1 = { 8, 5, 3, 10, 2, 8, 1 };
+                int[] b = new int[a1.length];
 
-                for (int i = 0; i < a.length; i++) {
-
-                    b[i] = [i] + a[a.length - 1 - i];
+                for (int i = 0; i < a1.length; i++) {
+                    b[i] = a1[i] + a1[a1.length - 1 - i];
                 }
 
                 for (int i = 0; i < b.length; i++) {
