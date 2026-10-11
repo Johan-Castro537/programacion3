@@ -9,6 +9,7 @@ public class Ejemplo_De_Pila {
 //isEmpty()  comprobar si ya no quedan platos
 
     public static void main(String[] args) {
+        //se crean los platos
         Stack<String> platos = new Stack<>();
 
         platos.push("Plato 1");
