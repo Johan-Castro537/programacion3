@@ -48,7 +48,7 @@ public class Ejercicio_9_6 {
                 }
             }
 
-            //compare las propiedades
+            //comparé las propiedades
             else {
                 while (!pila.isEmpty() && pila.peek() != '('
                         && (prioridad(pila.peek()) > prioridad(caracter)
