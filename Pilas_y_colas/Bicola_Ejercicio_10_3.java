@@ -1,8 +1,8 @@
 
-public class Bicola<T> {
+public class Bicola_Ejercicio_10_3 <T> {
       public static void main(String[] args) {
     
-        Bicola<String> clientes = new Bicola<>();
+        Bicola_Ejercicio_10_3<String> clientes = new Bicola_Ejercicio_10_3<>();
 
         clientes.insertarFin("Carlos");
         clientes.insertarFin("Maria");
@@ -42,7 +42,7 @@ public class Bicola<T> {
     private int cantidad;
 
     //solo hice la bicola vacia, nada mas 
-    public Bicola() {
+    public Bicola_Ejercicio_10_3() {
         frente = null;
         fin = null;
         cantidad = 0;
